@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Authentication with firebase</title>
+	<link rel="stylesheet" href="/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css">
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    
+</head>
+<body>
+	<div id="app">
+	<center>
+		<div class="center-vertical" id="login">
+        <h2>Hey Investor!</h2>
+        <h6>Please Login To Your Account</h6>
+        <div class="form-group">
+          <label>Email ID</label>
+          <input type="email" id="txtEmail">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="txtPassword">
+        </div>
+        <div class="controls">
+          <button type="button"><span class="glyphicon glyphicon-unchecked button-rememember-me-glyph"></span>Remember Me</button>
+          <button id="btnLogin" type="submit"><span class="glyphicon glyphicon-lock"></span>Sign In</button>
+        </div>
+        
+        
+        
+          <div id="forgot-password"><a href="#">Forgot Your Password?</a></div>
+          <div><button id="btnSignUp">Create An Account</button></div>
+        
+		
+    
+		<div id="results"></div>
+		</center>
+		</div>
+		
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
